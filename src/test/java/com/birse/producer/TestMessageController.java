@@ -19,6 +19,6 @@ public class TestMessageController {
     }
 
     private String createMessage() {
-        return "Hello World " + RandomIDGenerator.generateLong();
+        return "Hello World this is the producer: " + RandomIDGenerator.generateLong();
     }
 }
