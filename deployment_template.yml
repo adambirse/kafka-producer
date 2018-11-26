@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: producer
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: producer
@@ -15,5 +15,8 @@ spec:
       containers:
       - name: producer
         image: gcr.io/_PROJECT_NAME_/_DOCKER_IMAGE_NAME_:_TRAVIS_COMMIT_
+        env:
+          - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
+            value: "operatic-rottweiler-cp-kafka-0:9092,operatic-rottweiler-cp-kafka-1:9092"
         ports:
         - containerPort: 8080

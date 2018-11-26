@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    bootstrap-servers: "kafka1:9092,kafka2:9092,kafka3:9092"
+
+app:
+  topic:
+    test: test
+
+logging:
+  level:
+    root: WARN
+    org.springframework.web: INFO
+    com.birse.kafka: DEBUG
