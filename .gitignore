@@ -2,7 +2,7 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 
-*.jar
+kafka-producer*.jar
 *.bak
 *_deployment.yml
 
