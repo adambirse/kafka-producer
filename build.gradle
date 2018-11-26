@@ -1,0 +1,21 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply from: rootProject.file("gradle_support/spring-boot.gradle")
+
+
+group = 'com.birse'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+

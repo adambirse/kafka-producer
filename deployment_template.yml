@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: producer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: producer
+  template:
+    metadata:
+      labels:
+        app: producer
+    spec:
+      containers:
+      - name: producer
+        image: gcr.io/_PROJECT_NAME_/_DOCKER_IMAGE_NAME_:_TRAVIS_COMMIT_
+        ports:
+        - containerPort: 8080

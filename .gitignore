@@ -1,0 +1,15 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+*.jar
+*.bak
+*_deployment.yml
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
