@@ -17,6 +17,6 @@ spec:
         image: gcr.io/_PROJECT_NAME_/_DOCKER_IMAGE_NAME_:_TRAVIS_COMMIT_
         env:
           - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
-            value: "brawny-unicorn-cp-kafka-0:9092,brawny-unicorn-cp-kafka-1:9092,,brawny-unicorn-cp-kafka-2:9092"
+            value: "brawny-unicorn-cp-kafka:9092"
         ports:
         - containerPort: 8080
